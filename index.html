@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Page</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div id="header" class="container center">
+        <h1>TASK MANAGEMENT PAGE</h1>
+    </div>
+
+    <main class="container">
+
+        <section id="leftPanel" class="container column">
+            <h2>Add a Task</h2>
+
+            <form id="taskForm">
+                <div>
+                    <label for="taskInput">Task:</label>
+                    <input
+                        id="taskInput"
+                        name="task"
+                        type="text"
+                        placeholder="Enter a task"
+                    >
+                </div>
+
+                <div>
+                    <label for="priority">Priority:</label>
+                    <select id="priority" name="priority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+
+                <button id="addTask" class="button" type="submit">
+                    Add Task
+                </button>
+            </form>
+        </section>
+
+        <section id="rightPanel" class="container column">
+            <h2>Task List</h2>
+
+            <div id="taskList">
+
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
